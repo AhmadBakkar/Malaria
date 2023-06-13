@@ -8,7 +8,7 @@ from streamlit import components
 #########################################################################################################################
 
 ######################################################### LOAD THE MALARIA DATASET #################################################
-df = pd.read_csv('C:\\Users\\Ahmad\\Desktop\\Dashboard\\Streamlit\\Malaria.csv')
+df = pd.read_csv('Malaria.csv')
 
 st.set_page_config(page_title = 'Malaria Dashboard',
                     page_icon = 'bar_chart:',
