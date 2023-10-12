@@ -150,9 +150,9 @@ if session_state.current_tab == "World Map":
 
     st.plotly_chart(fig)
 
-st.markdown("World map chart showing the total number of malaria cases around the world") 
-st.markdown("Most of the cases are centered in Africa")
-st.markdown("Nigeria has the highest number of cases 53 million cases in 2017")
+  st.markdown("World map chart showing the total number of malaria cases around the world") 
+  st.markdown("Most of the cases are centered in Africa")
+  st.markdown("Nigeria has the highest number of cases 53 million cases in 2017")
 
 #################################### BAR CHART VISUALIZATION #######################################
 elif session_state.current_tab == "Bar Chart":
