@@ -156,21 +156,21 @@ if session_state.current_tab == "World Map":
 
 #################################### BAR CHART VISUALIZATION #######################################
 elif session_state.current_tab == "Bar Chart":
-    st.title("Top 10 Countries with the Highest Number of Malaria Cases ")
+#    st.title("Top 10 Countries with the Highest Number of Malaria Cases ")
 
 # Create the bar chart using Streamlit
-    st.bar_chart(
-    top_10_countries.set_index('Country')['No. of cases'],
-    use_container_width=True
-    )
+#    st.bar_chart(
+#    top_10_countries.set_index('Country')['No. of cases'],
+#    use_container_width=True
+#   )
 
-    st.title("Top 10 Countries with the Highest Number of Malaria Deaths Cases ")
+ #   st.title("Top 10 Countries with the Highest Number of Malaria Deaths Cases ")
 
 # Create the bar chart using Streamlit
-    st.bar_chart(
-    top_10_countries_d.set_index('Country')['No. of deaths'],
-    use_container_width=True
-    )
+  #  st.bar_chart(
+   # top_10_countries_d.set_index('Country')['No. of deaths'],
+    #use_container_width=True
+    #)
 
     st.markdown("Two bar charts showing the top 10 countries with number of cases and number of deaths") 
     st.markdown("Most of the countries are located in Africa")
@@ -181,15 +181,19 @@ elif session_state.current_tab == "Bar Chart":
     chart_data = pd.Series(organization_cases['No. of cases'].values, index=organization_cases['WHO Region'])
     st.bar_chart(chart_data)
 
+    st.markdown("bar charts showing the number of malaria cases per region")
+    st.markdown("If we set the maximum death for 100,000 we can see that the African Region has the highest malaria cases in the world.")
+    st.markdown("Other regions barely have cases compated to Africa")
+  
     st.title("Number of Malaria Deaths Per Region ")
 # Create the bar chart using Streamlit
     # Create the bar chart using st.bar_chart
     chart_data = pd.Series(organization_deaths['No. of deaths'].values, index=organization_deaths['WHO Region'])
     st.bar_chart(chart_data)
-
-
-    #st.markdown("Two bar charts showing the top 10 countries with number of cases and number of deaths") 
-    #st.markdown("Most of the countries are located in Africa")
+  
+    st.markdown("bar charts showing the number of malaria deaths cases per region")
+    st.markdown("If we set the maximum death for 100,000 we can see that the African Region has the highest malaria deaths in the world.")
+    st.markdown("This death toll is mainly due to lack of healtcare system and poor living conditions")
 
 #################################### LINE CHART VISUALIZATION ###################################################
 elif session_state.current_tab == "Line Chart":
