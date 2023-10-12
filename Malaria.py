@@ -172,8 +172,8 @@ elif session_state.current_tab == "Bar Chart":
     #use_container_width=True
     #)
 
-    st.markdown("Two bar charts showing the top 10 countries with number of cases and number of deaths") 
-    st.markdown("Most of the countries are located in Africa")
+    #st.markdown("Two bar charts showing the top 10 countries with number of cases and number of deaths") 
+    #st.markdown("Most of the countries are located in Africa")
 
     st.title("Number of Malaria Cases Per Region ")
 # Create the bar chart using Streamlit
