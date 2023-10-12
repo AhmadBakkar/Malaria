@@ -185,8 +185,8 @@ elif session_state.current_tab == "Bar Chart":
     st.bar_chart(chart_data)
 
 
-st.markdown("Two bar charts showing the top 10 countries with number of cases and number of deaths") 
-st.markdown("Most of the countries are located in Africa")
+  st.markdown("Two bar charts showing the top 10 countries with number of cases and number of deaths") 
+  st.markdown("Most of the countries are located in Africa")
 
 #################################### LINE CHART VISUALIZATION ###################################################
 elif session_state.current_tab == "Line Chart":
@@ -232,9 +232,9 @@ elif session_state.current_tab == "Line Chart":
         st.plotly_chart(fig1)
 
 
-st.markdown("Two line charts showing the number of cases and the number of deaths from 2010 till 2018") 
-st.markdown("Throughout the years both the number of cases and number of deaths is decreasing")
-st.markdown("WHO efforts contributed to this impact.")
+  st.markdown("Two line charts showing the number of cases and the number of deaths from 2010 till 2018") 
+  st.markdown("Throughout the years both the number of cases and number of deaths is decreasing")
+  st.markdown("WHO efforts contributed to this impact.")
 
 #################################### PIE CHART VISUALIZATION #####################################        
 elif session_state.current_tab == "Pie Chart":
@@ -247,8 +247,8 @@ elif session_state.current_tab == "Pie Chart":
     # Display the chart in Streamlit
     st.plotly_chart(fig)
 
-st.markdown("A pie chart showing the malaria death percentage per WHO region.")
-st.markdown("Africa contribute to 92% of malaria deaths in the world")
+  st.markdown("A pie chart showing the malaria death percentage per WHO region.")
+  st.markdown("Africa contribute to 92% of malaria deaths in the world")
 #################################### STATISTICS ##################################################
 elif session_state.current_tab == "Data Statistics":
     # Display the filtered data
